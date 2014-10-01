@@ -18,3 +18,12 @@ var formattedRole = HTMLheaderRole.replace("%data%",role);
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
 
+// quiz4
+var skills = ["faithfull","programming","friendly","detailed"];
+var bio = {
+	"name" : "Dani",
+	"age" : 33,
+	"skills" : skills
+};
+$("#main").append(bio.name);
+
