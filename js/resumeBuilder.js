@@ -14,6 +14,8 @@ var formattedName = HTMLheaderName.replace("%data%",name);
 var role = "Web Developer";
 var formattedRole = HTMLheaderRole.replace("%data%",role);
 
+
+
 //In this way will place the role first then will prepend the name afterwards
 $("#header").prepend(formattedRole);
 $("#header").prepend(formattedName);
@@ -22,8 +24,21 @@ $("#header").prepend(formattedName);
 var skills = ["faithfull","programming","friendly","detailed"];
 var bio = {
 	"name" : "Dani",
-	"age" : 33,
-	"skills" : skills
+	"role": "Web Developer",
+	"contactInfo": {
+		"work ph.":"134.024.0240",
+		"client ph.":"925.123.1111"
+	},
+	"bioPic": "images/dani.jpg",
+	"skills" : skills,
+	"welcomemsg": "Welcome to my resume page! Hope you can find what you're looking for!"
 };
-$("#main").append(bio.name);
+
+var formattedContactInfo = HTMLcontactGeneric.replace("%contact%",bio.contactInfo);
+
+$("#topContacts").append(formattedContactInfo);
+
+
+
+
 
