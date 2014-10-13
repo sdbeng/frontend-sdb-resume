@@ -34,7 +34,7 @@ var bio = {
 	"welcomemsg": "Welcome to my resume page! Hope you can find what you're looking for!"
 };
 
-var formattedContactInfo = HTMLcontactGeneric.replace("%contact%",bio.contactInfo);
+var formattedContactInfo = HTMLcontactGeneric.replace("%data%",bio.contactInfo);
 
 $("#topContacts").append(formattedContactInfo);
 
